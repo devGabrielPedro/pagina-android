@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'idroid';
-    src: url(../fontes/idroid.otf) format(opentype);
+    src: url(./fontes/idroid.otf) format(opentype);
     font-weight: normal;
 }
 
@@ -20,107 +20,171 @@
     --fonte-android: 'idroid';
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     background-color: var(--cor1);
-    font-family: var(--fonte-padrao);
-    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.menu {
-    text-align: left;
-    background-color: var(--cor5);
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
 }
 
-.menu > a {
-    text-decoration: none;
+header {
     color: white;
-    padding-left: 8px;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding: 20px;
 }
 
-.menu > a:hover {
-    background-color: #0d8b48;
+header > h1 {
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.37);
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.37);
+}
+
+h1 {
+    font-family: var(--fonte-android);
+}
+
+h2 {
+    font-family: var(--fonte-android);
+}
+
+nav {
+    background-color: var(--cor5);
     padding: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.247);
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: bold;
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    border-radius: 2px;
+}
+
+main {
+     background-color: white;
+     min-width: 300px;
+     max-width: 1000px;
+     margin: auto;
+     padding: 20px;
+     margin-bottom: 20px;
+     border-radius: 0px 0px 10px 10px;
+     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.308);
+}
+
+main strong {
+    color: var(--cor5);
+}
+
+main a {
+    color: var(--cor5);
+}
+
+main a:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+    padding: 1.5px;
     border-radius: 5px;
 }
 
-.cabecalho {
-    font-family: var(--fonte-destaque);
-    background-color: #3bd27f;
-    text-align: center;
-    padding: 20px;
-    color: white;
+main h1 {
+    color: var(--cor5);
+    font-size: 2em;
 }
 
-
-.artigo > p {
-    font-size: 20px;
-}
-
-.artigo > h1 {
-    font-family: var(--fonte-android);
-    color: #0d8b48;
-    text-indent: 0px;
-}
-
-.artigo {
-    text-indent: 2em;
-    margin: 0px 11em;
-    background-color: white;
-    padding: 1.5em;
-    margin-bottom: 2em;
-    border-radius: 0px 0px 10px 10px;
-    box-shadow: 3px 3px 7px #00000054;
-}
-
-.destaque {
-    color: #0d8b48;
-}
-
-.artigo > h2 {
-    font-family: 'idroid';
-    color: #0d8b48;
-    text-indent: 0px;
-    background-color: #84e1ad;
+main h2 {
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 10px;
 }
 
 .imagem {
+    display: block;
     text-align: center;
+    max-width: 100%;
 }
 
-.video > iframe {
-    padding: 25px;
+div.video {
+    background-color: var(--cor5);
+    margin-bottom: 30px;
+    margin: 0px -20px 0px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
 }
 
-.video {
-    background-color: #065229;
-    margin: 16px -24px;
-    text-align: center;
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
-.quadro > h3 {
-    padding: 5px;
-    background-color: #0d8b48a4;
+aside {
+    margin-top: 10px;
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside > h3 {
+    background-color: 
+    var(--cor4);
+    margin: -10px -10px 0px -10px;
+    padding: 10px;
+    color: white;
     border-radius: 10px 10px 0px 0px;
 }
 
-.quadro > ul {
-    width: 250px;
-    display: inline-block;
-}
-
-.quadro {
-    box-shadow: 3px 3px 7px #00000054;
-    border-radius: 10px;
-    background-color: #0d8b485e;
-}
-
-.rodape {
-    background-color: #0d8b48;
-    text-align: center;
-    padding: 1px;
+footer {
+    background-color: var(--cor5);
     color: white;
+    text-align: center;
+    padding: 5px;
 }
 
-.rodape > p {
-    margin: 1px;
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    border-radius: 2px;
+    padding: 1.5px;
+    text-decoration: underline;
 }
