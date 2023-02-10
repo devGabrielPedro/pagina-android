@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'idroid';
+    src: url(../fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+}
+
+:root {
+    --cor1: #c5ebd6;
+    --cor2: #83e1ad;
+    --cor3: #3ddc84;
+    --cor4: #2fa866;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'idroid';
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    margin: 0px;
+}
+
+.menu {
+    text-align: left;
+    background-color: var(--cor5);
+}
+
+.menu > a {
+    text-decoration: none;
+    color: white;
+    padding-left: 8px;
+}
+
+.menu > a:hover {
+    background-color: #0d8b48;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cabecalho {
+    font-family: var(--fonte-destaque);
+    background-color: #3bd27f;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+
+.artigo > p {
+    font-size: 20px;
+}
+
+.artigo > h1 {
+    font-family: var(--fonte-android);
+    color: #0d8b48;
+    text-indent: 0px;
+}
+
+.artigo {
+    text-indent: 2em;
+    margin: 0px 11em;
+    background-color: white;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 3px 3px 7px #00000054;
+}
+
+.destaque {
+    color: #0d8b48;
+}
+
+.artigo > h2 {
+    font-family: 'idroid';
+    color: #0d8b48;
+    text-indent: 0px;
+    background-color: #84e1ad;
+}
+
+.imagem {
+    text-align: center;
+}
+
+.video > iframe {
+    padding: 25px;
+}
+
+.video {
+    background-color: #065229;
+    margin: 16px -24px;
+    text-align: center;
+}
+
+.quadro > h3 {
+    padding: 5px;
+    background-color: #0d8b48a4;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.quadro > ul {
+    width: 250px;
+    display: inline-block;
+}
+
+.quadro {
+    box-shadow: 3px 3px 7px #00000054;
+    border-radius: 10px;
+    background-color: #0d8b485e;
+}
+
+.rodape {
+    background-color: #0d8b48;
+    text-align: center;
+    padding: 1px;
+    color: white;
+}
+
+.rodape > p {
+    margin: 1px;
+}
